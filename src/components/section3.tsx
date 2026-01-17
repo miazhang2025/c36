@@ -30,10 +30,14 @@ export default function TechnicalCoreSection() {
             
           </h2> */}
 
-          <div className="bg-[#D5D5DC] !mb-[100px]">
-          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#0053A2] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[550px] h-[36px] text-[20px] text-center">
-              Treasury&apos;s Technical Core
-           </h2>
+          <div className="bg-[#D5D5DC] !mb-[100px] flex justify-center">
+            <h2
+              style={{ fontFamily: 'var(--font-kode-mono)' }}
+              className="text-[#0053A2] font-mono tracking-[0.3em] font-bold !px-[16px] !py-[4px] w-full max-w-[550px] text-[20px] sm:text-[20px] text-center leading-tight"
+            >
+              <span className="block sm:inline">Treasury&apos;s</span>
+              <span className="block sm:inline"> Technical Core</span>
+            </h2>
           </div>
 
           {/* Content Paragraphs */}

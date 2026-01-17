@@ -21,10 +21,10 @@ export default function IntroductionSection() {
             </div>
             
             <div style={{ fontFamily: 'var(--font-roboto-mono)' }} className=" flex flex-col gap-6 max-w-[600px] text-[#FFFFFF] tracking-wide text-[18px]">
-               <p className="m-0 mb-8 leading-relaxed text-base ">Core36 is a three-month, full-time program designed to prepare engineers to step into the technical core of the U.S. Treasury.</p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Committee-led selection by senior <span className="font-bold">technical leaders</span> from <span className="font-bold">Anthropic, Google DeepMind, Tesla, ElevenLabs, Harvard University, Stanford University</span>.</p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Nomination-only entry, however we know not everyone is embedded in existing networks so you can pitch to us [email]. </p>
-                <p className="m-0 mb-8 leading-relaxed text-base">Built by founding engineers at <span className="font-bold">Gemini, OpenAI. </span></p>
+               <p className="m-0 mb-8 leading-relaxed text-base ">We back founder-level engineers <span className='font-bold'>who will transform the US Treasury</span>. On February 1 they will join an intensive eight week lab. By April 15 they begin building something extraordinary - the AI-first engineering team for our $30tn economy</p>
+                <p className="m-0 mb-8 leading-relaxed text-base">To be selected you must be nominated (you can also ask for nominations on X). The selection committee are <span className="font-bold">Tech Leads at Gemini, Anthropic, Tesla and Stanford</span></p>
+                <p className="m-0 mb-8 leading-relaxed text-base">Core36 gives $195k to engineers building AI that rearchitects US finance. <span className="font-bold">Nominate the engineer who belongs here</span></p>
+
             </div>
         </div>
     </div>
