@@ -1,0 +1,48 @@
+import type { Metadata } from "next";
+import { Kode_Mono, Roboto_Mono, Noto_Sans } from "next/font/google";
+import "./globals.css";
+import IntroductionSection from "@/components/section1";
+import ManifestSection from "@/components/section2";
+import TechnicalCoreSection from "@/components/section3";
+import SelectivitySection from "@/components/section4";
+
+const kodeMono = Kode_Mono({
+  variable: "--font-kode-mono",
+  subsets: ["latin"],
+});
+
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto-mono",
+  subsets: ["latin"],
+  weight: ["300"],
+});
+
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: "CORE36",
+  description: "Tresury Technical Core",
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${kodeMono.variable} ${robotoMono.variable} ${notoSans.variable} antialiased`}
+      >
+        {children}
+        <IntroductionSection />
+        <ManifestSection />
+        <TechnicalCoreSection />
+        <SelectivitySection />
+      </body>
+    </html>
+  );
+}

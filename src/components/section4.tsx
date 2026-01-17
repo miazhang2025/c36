@@ -1,0 +1,140 @@
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+
+export default function SelectivitySection() {
+  return (
+    <section className="bg-[#D9D9DF] text-[#161519] w-full flex flex-col items-center py-24 relative overflow-hidden">
+      
+      {/* 1. Main Content Area */}
+      <div className="w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[200px]">
+        
+        {/* Header - Blue Box */}
+        <div className="!mb-[80px]">
+          <div className="bg-[#0053A2] !px-[8px] !py-[4px] inline-block">
+            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[18px] text-center">
+              Selectivity
+            </h2>
+          </div>
+        </div>
+
+        {/* Text Content */}
+        <div className="space-y-10 font-[var(--font-noto-sans)] leading-relaxed text-[15px] md:text-[18px] font-[300]"  style={{ backgroundImage: 'url(/section4.svg)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: "contain" }}>
+          <p className="font-[300] !mb-[50px]">
+            The process will move swiftly on a rolling basis, with introductory calls taking place within 48 hours after nomination. We anticipate concluding the full process within one week.
+          </p>
+
+          <ul className="space-y-2 !mb-[80px]">
+            {[
+              "Stage 1: Nomination or invitation",
+              "Stage 2: Introductory conversation",
+              "Stage 3: Technical conversation",
+              "Stage 4: Selection"
+            ].map((item, index) => (
+              <li key={index} className="flex items-start ">
+                <span className="text-[#0053A2] font-mono font-bold mr-2 md:text-[19px] !font-[400]">•</span>
+                <span className="text-[#0053A2] font-mono md:text-[19px] !font-[400]">{item}</span>
+              </li>
+            ))}
+          </ul>
+
+          <p className="font-[300] !mb-[80px]">
+            The selection committee is made up of technical leaders from ElevenLabs, Anthropic, ASML, Tesla, Oxford University, Harvard University, Stanford University.
+          </p>
+
+          <div className="flex justify-end !pt-8">
+          <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  className="flex justify-center items-center border border-[#0053A2] text-[#0053A2] !px-[16px] !py-[8px] text-[14px] tracking-[0.2em] font-mono hover:bg-[#0053A2] hover:text-white transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
+            NOMINATION
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* 2. Partners Logo Strip - Fixed Dimensions 205x71 */}
+      {/* We use border-t and border-l on the container, and border-r/border-b on items to create a perfect grid even when wrapping */}
+      {/* <div className="w-full flex justify-center">
+        <div className="flex flex-wrap justify-center border-t border-l border-[#0053A2]">
+          
+          <PartnerCell name="ElevenLabs" pattern="diagonal1" />
+          <PartnerCell name="Anthropic" pattern="plain" />
+          <PartnerCell name="ASML" pattern="diagonal" />
+          <PartnerCell name="Tesla" pattern="dots" />
+          <PartnerCell name="Oxford University" pattern="diagonal3" />
+          <PartnerCell name="Harvard University" pattern="plain" />
+          <PartnerCell name="Stanford University" pattern="diagonal3" />
+
+        </div>
+      </div> */}
+
+      {/* 3. Bottom Treasury Seal */}
+      <div className="!p-12 !py-[200px]">
+        <div className="relative w-[120px] h-[120px] opacity-50 mix-blend-multiply">
+           <Image
+            src="/icon_blue.png" 
+            alt="Department of Treasury Seal"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </div>
+
+    </section>
+  );
+}
+
+// --- Helper Component ---
+function PartnerCell({ name, pattern }: { name: string, pattern: 'diagonal' | 'dots' | 'plain' | 'diagonal1' | 'diagonal3' }) {
+  return (
+    // Added w-[205px] and h-[71px] here
+    // Added border-r and border-b to maintain the grid lines
+    <div className="relative w-[205px] h-[71px] border-r border-b border-[#0053A2] bg-[#D9D9DF] flex items-center justify-center overflow-hidden group" >
+      
+      {/* 1. Background Pattern Layer */}
+      {pattern === 'diagonal' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: 'repeating-linear-gradient(45deg, #0053A2 0, #0053A2 1px, transparent 0, transparent 10px)'
+          }} 
+        />
+      )}
+      {pattern === 'diagonal1' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: 'repeating-linear-gradient(135deg, #0053A2 0, #0053A2 1px, transparent 0, transparent 10px)'
+          }} 
+        />
+      )}
+      {pattern === 'diagonal3' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+            backgroundImage: "url('/Rectangle 101.png')",
+            
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+          }} 
+        />
+      )}
+      
+      
+      {pattern === 'dots' && (
+        <div 
+          className="absolute inset-0 opacity-30" 
+          style={{ 
+             backgroundImage: 'radial-gradient(#0053A2 1.5px, transparent 1.5px)', 
+             backgroundSize: '12px 12px' 
+          }} 
+        />
+      )}
+
+      {/* 2. The Text (Centered) */}
+      <span className="relative z-10 font-roboto-mono text-[14px] tracking-widest text-[#000000] uppercase text-center font-[400]">
+        {name}
+      </span>
+
+    </div>
+  );
+}
