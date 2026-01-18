@@ -18,9 +18,9 @@ export default function Home() {
     >
       {/* Header */}
       <header
-        className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between w-full max-w-[1408px] px-4  sm:py-12 pt-6 sm:!pt-[50px] gap-4 !mt-[50px] lg:!mt-[30px]"
+        className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between w-full max-w-[1408px] px-4  sm:py-12 pt-6 sm:!pt-[50px] gap-4 !mt-[30px] "
       >
-        <div className="flex flex-col sm:w-[70px] sm:h-[70px] sm:flex-row items-center gap-4 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start text-center">
+        <div className="flex flex-col lg:w-[70px] lg:h-[70px] sm:flex-row items-center gap-4 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start text-center lg:t">
           <Image
             src="/icon.png"
             alt="Department of the Treasury Logo"
@@ -31,7 +31,7 @@ export default function Home() {
           <div className="mt-4 sm:mt-0 w-full sm:w-auto">
             <h1
               style={{ fontFamily: 'var(--font-kode-mono)' }}
-              className="text-5xl xs:text-6xl sm:text-[36px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
+              className="text-5xl xs:text-xl text-[20px] lg:!text-[40px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
             >
               CORE36
             </h1>
@@ -48,11 +48,11 @@ export default function Home() {
 
       {/* Main Content Area */}
       <main className="flex flex-col items-center justify-center w-full flex-1 max-w-[1157px] px-2 xs:px-4 sm:px-0">
-        <div className="relative w-full flex items-center justify-center aspect-[2.5/1] max-w-full">
+        <div className="relative w-full flex items-center justify-center aspect-[1.5/1] max-w-full">
           <Lottie
             animationData={treasuryAnimation}
             loop={true}
-            className="w-[95vw] h-[40vw] max-w-[1000px] max-h-auto sm:!w-[120vw] sm:h-auto"
+            className="w-[95vw] h-[40vw] max-w-[1000px] max-h-auto sm:!w-[110vw]"
           />
         </div>
       </main>

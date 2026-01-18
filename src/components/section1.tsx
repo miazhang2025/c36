@@ -40,7 +40,7 @@ export default function IntroductionSection() {
         <div className="w-[90%] max-w-[1200px]">
         <div className="flex justify-between items-center gap-8 mb-12">
             <div className="flex-none">
-                <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-8xl text-[#FFFFFF] m-0 font-bold tracking-wider">TL;DR</h1>
+                <h1 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-8xl text-[#FFFFFF] m-0 font-bold tracking-wider !mb-[20px]">TL;DR</h1>
             </div>
             
             <div className="flex-1 max-w-[600px]">
