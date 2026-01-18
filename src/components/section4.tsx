@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function SelectivitySection() {
   return (
-    <section className="bg-[#D9D9DF] text-[#161519] w-full flex flex-col items-center py-24 relative overflow-hidden">
+    <section className="bg-[#D9D9DF] text-[#161519] w-full flex flex-col items-center py-24 relative overflow-hidden animate-fadein animate-fadein-delay3">
       
       {/* 1. Main Content Area */}
       <div className="w-full max-w-[971px] !px-6 !py-[100px] !mb-24 !pt-[200px]">

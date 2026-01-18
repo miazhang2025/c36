@@ -14,7 +14,7 @@ export default function TechnicalCoreSection() {
         />
        
       </div> */}
-      <section className="!bg-[#0053A2] text-white flex flex-col items-center !px-6 !py-[200px]">
+      <section className="!bg-[#0053A2] text-white flex flex-col items-center !px-6 !py-[200px] animate-fadein animate-fadein-delay2">
       
       {/* 1. FULL WIDTH HEADER IMAGE */}
 
