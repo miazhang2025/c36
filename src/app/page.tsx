@@ -18,20 +18,20 @@ export default function Home() {
     >
       {/* Header */}
       <header
-        className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between w-full max-w-[1408px] px-2 sm:px-8 py-2 sm:py-12 pt-2 !pt-[50px] lg:pt-[10px] gap-2 sm:gap-4 mt-4 sm:mt-[50px] lg:mt-[30px]"
+        className="flex flex-col sm:flex-row items-center sm:items-center justify-center sm:justify-between w-full max-w-[1408px] px-4  sm:py-12 pt-6 sm:!pt-[50px] gap-4 !mt-[50px] lg:!mt-[30px]"
       >
-        <div className="flex flex-col sm:w-[70px] sm:h-[70px] sm:flex-row items-center gap-2 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start text-center">
+        <div className="flex flex-col sm:w-[70px] sm:h-[70px] sm:flex-row items-center gap-4 sm:gap-4 w-full sm:w-auto justify-center sm:justify-start text-center">
           <Image
             src="/icon.png"
             alt="Department of the Treasury Logo"
-            width={48}
-            height={48}
-            className="object-contain w-10 h-10 xs:w-12 xs:h-12 sm:w-[70px] sm:h-[70px]"
+            width={120}
+            height={120}
+            className="object-contain w-24 h-24 xs:w-28 xs:h-28 "
           />
-          <div className="mt-2 sm:mt-0 w-full sm:w-auto">
+          <div className="mt-4 sm:mt-0 w-full sm:w-auto">
             <h1
               style={{ fontFamily: 'var(--font-kode-mono)' }}
-              className="text-2xl xs:text-3xl sm:text-[36px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
+              className="text-5xl xs:text-6xl sm:text-[36px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
             >
               CORE36
             </h1>
