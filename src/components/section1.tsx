@@ -24,7 +24,11 @@ export default function IntroductionSection() {
                <p className="m-0 mb-8 leading-relaxed text-base ">We back founder-level engineers <span className='font-bold'>who will transform the US Treasury</span>. On February 1 they will join an intensive eight week lab. By April 15 they begin building something extraordinary - the AI-first engineering team for our $30tn economy</p>
                 <p className="m-0 mb-8 leading-relaxed text-base">To be selected you must be nominated (you can also ask for nominations on X). The selection committee are <span className="font-bold">Tech Leads at Gemini, Anthropic, Tesla and Stanford</span></p>
                 <p className="m-0 mb-8 leading-relaxed text-base">Core36 gives $195k to engineers building AI that rearchitects US finance. <span className="font-bold">Nominate the engineer who belongs here</span></p>
-
+                <div className="flex justify-start !pt-8">
+          <Link href="https://5adne.share.hsforms.com/2mJaj2LW8T-iKhXQGwuztlQ"  className="flex justify-center items-center border border-[#D9D9DF] text-[#D9D9DF]  text-[14px] tracking-[0.2em] font-mono hover:bg-[#D9D9DF] hover:text-[#0053A2] transition-all uppercase font-[var(--font-noto-sans)] max-w-[154px] h-[41px] w-full bg-transparent shadow-[3px_3px_0px_0px_#0053a233]">
+            NOMINATION
+            </Link>
+          </div>
             </div>
         </div>
     </div>
