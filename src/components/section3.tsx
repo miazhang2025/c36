@@ -35,8 +35,8 @@ export default function TechnicalCoreSection() {
               style={{ fontFamily: 'var(--font-kode-mono)' }}
               className="text-[#0053A2] font-mono tracking-[0.3em] font-bold !px-[16px] !py-[4px] w-full max-w-[550px] text-[20px] sm:text-[20px] text-center leading-tight"
             >
-              <span className="block sm:inline">Treasury&apos;s</span>
-              <span className="block sm:inline"> Technical Core</span>
+              <span className="block sm:inline">The IMPACT</span>
+              {/* <span className="block sm:inline"> Technical Core</span> */}
             </h2>
           </div>
 

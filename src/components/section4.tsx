@@ -1,6 +1,11 @@
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import ScrambledText from './ScrambledText';
+import { useState } from "react";
+
+
 
 export default function SelectivitySection() {
   return (
@@ -12,9 +17,19 @@ export default function SelectivitySection() {
         {/* Header - Blue Box */}
         <div className="!mb-[80px]">
           <div className="bg-[#0053A2] !px-[8px] !py-[4px] inline-block">
-            <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[18px] text-center">
-              Selectivity
-            </h2>
+            {/* <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[18px] text-center">
+              SELECTIVITY
+            </h2> */}
+                                   <ScrambledText
+  className="scrambled-text-demo"
+  radius={100}
+  duration={1.2}
+  speed={0.3}
+  scrambleChars="$.*"
+  style={{ fontFamily: 'var(--font-kode-mono)', width: '270px' }}
+>
+            SELECTIVITY
+</ScrambledText>
           </div>
         </div>
 

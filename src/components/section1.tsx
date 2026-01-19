@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import PixelBlast from './PixelBlast';
 
 export default function IntroductionSection() {
   // Elements to display
@@ -24,7 +25,7 @@ export default function IntroductionSection() {
 
   return (
     <section
-      className={`h-auto bg-[#0053A2] !py-24 !px-6 flex flex-col items-center !pb-[200px] !pt-[0px] relative`}
+      className={`h-auto bg-[#0053A2] !py-24 !px-6 flex flex-col items-center !pb-[0px] !pt-[0px] relative`}
     >
       {/* <div className="w-[90%] max-w-[1200px] h-auto !mb-[100px]">
         <div className="flex justify-between items-center gap-8 mb-20 ">
@@ -67,13 +68,37 @@ export default function IntroductionSection() {
     </div>
 
       {/* Pixelbar at the bottom */}
-      <Image
+      {/* <Image
         src="/pixelbar.png"
         alt="Pixelbar"
         width={1400}
         height={40}
         className="absolute bottom-0 left-0 w-screen h-[10vh] object-cover"
-      />
+      /> */}
+
+      <div style={{ width: '100%', height: '200px', position: 'relative' , marginTop: '100px'}}>
+  <PixelBlast
+    variant="square"
+    pixelSize={4}
+    color="#D9D9DF"
+    patternScale={2}
+    patternDensity={1}
+    pixelSizeJitter={0}
+    enableRipples
+    rippleSpeed={0.4}
+    rippleThickness={0.12}
+    rippleIntensityScale={1.5}
+    liquid={false}
+    liquidStrength={0.12}
+    liquidRadius={1.2}
+    liquidWobbleSpeed={5}
+    speed={0.5}
+    edgeFade={0.0}
+    transparent
+  />
+</div>
+
+
     </section>
   );
 }

@@ -1,6 +1,8 @@
 'use client';
 import Image from "next/image";
 import { useState } from "react";
+import ScrambledText from './ScrambledText';
+
 
 export default function ManifestSection() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -56,9 +58,19 @@ export default function ManifestSection() {
         {/* --- The Moment --- */}
         <div className="flex flex-col gap-6 !mb-[100px]">
           <div className="self-start bg-[#0053A2] px-4 py-2 !mb-[40px]">
-        <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[20px] text-center">
+        {/* <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[20px] text-center">
               The Moment
-            </h2>
+            </h2> */}
+            <ScrambledText
+  className="scrambled-text-demo"
+  radius={100}
+  duration={1.2}
+  speed={0.5}
+  scrambleChars="$.*"
+  style={{ fontFamily: 'var(--font-kode-mono)', width: '250px' }}
+>
+  THE MOMENT
+</ScrambledText>
           </div>
 
           <div className="flex flex-col gap-6 text-[18px] !font-[400] text-[#161519] leading-relaxed tracking-wide">
@@ -80,9 +92,21 @@ export default function ManifestSection() {
         {/* --- The Response --- */}
         <div className="flex flex-col gap-6 !mb-[100px]">
           <div className="self-start bg-[#0053A2] !mb-[40px]">
-          <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[20px] text-center">
+          {/* <h2 style={{ fontFamily: 'var(--font-kode-mono)' }} className="text-[#D5D5DC] font-mono  tracking-[0.3em] font-bold  !px-[16px] !py-[4px] w-[300px] h-[36px] text-[20px] text-center">
               The Response
-           </h2> 
+           </h2>  */}
+
+                       <ScrambledText
+  className="scrambled-text-demo"
+  radius={100}
+  duration={1.2}
+  speed={0.3}
+  scrambleChars="$.*"
+  style={{ fontFamily: 'var(--font-kode-mono)', width: '300px' }}
+>
+            THE RESPONSE
+</ScrambledText>
+
           </div>
 
           <div className="flex flex-col gap-6 text-[18px] !font-[200] text-[#161519] leading-relaxed font-[var(--font-noto-sans)]">

@@ -5,6 +5,7 @@ import IntroductionSection from "@/components/section1";
 import ManifestSection from "@/components/section2";
 import TechnicalCoreSection from "@/components/section3";
 import SelectivitySection from "@/components/section4";
+import Section5 from "@/components/section5";
 
 const kodeMono = Kode_Mono({
   variable: "--font-kode-mono",
@@ -42,6 +43,7 @@ export default function RootLayout({
         <ManifestSection />
         <TechnicalCoreSection />
         <SelectivitySection />
+      
       </body>
     </html>
   );

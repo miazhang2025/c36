@@ -1,6 +1,7 @@
 'use client';
 import Image from "next/image";
 import ManifestSection from "@/components/section2";
+import Section5 from "@/components/section5";
 import Lottie from "lottie-react";
 import treasuryAnimation from "@/treasury_animation.json";
 import Link from "next/link";
@@ -31,7 +32,7 @@ export default function Home() {
           <div className="mt-4 sm:mt-0 w-full sm:w-auto">
             <h1
               style={{ fontFamily: 'var(--font-kode-mono)' }}
-              className="text-5xl xs:text-xl text-[20px] lg:!text-[40px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
+              className="hidden sm:flex text-5xl xs:text-xl text-[20px] lg:!text-[40px] font-bold font-[var(--font-kode-mono)] text-center sm:text-left"
             >
               CORE36
             </h1>
@@ -55,6 +56,8 @@ export default function Home() {
             className="w-[95vw] h-[40vw] max-w-[1000px] max-h-auto sm:!w-[110vw]"
           />
         </div>
+
+
       </main>
 
       {/* Footer */}
